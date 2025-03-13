@@ -58,20 +58,20 @@
 <body>
 
 	<nav class="navMenu  border">
-		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
-		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
-		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
-		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
-		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
+		<a id="anilist" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Anilist</a>
+		<a id="netflix" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Netflix</a>
+		<a id="letterboxd" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Letterboxd</a>
+		<a id="myanimelist" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> MyAnimeList</a>
+		<a id="crunchyroll" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Crunchyroll</a>
 
 
 
 	</nav>
-	<button id="anime" onclick="navigate(this.id)" id="inbox" type="button" class="fill black"><i class="fa-sharp fa-solid fa-n" style="transform: rotate(-20deg);"></i> Anime</button>
-	<button id="anime" onclick="navigate(this.id)" id="inbox" type="button" class="fill black"><i class="fa-sharp fa-solid fa-n" style="transform: rotate(-20deg);"></i> Anime</button>
-	<button id="anime" onclick="navigate(this.id)" id="inbox" type="button" class="fill black"><i class="fa-sharp fa-solid fa-n" style="transform: rotate(-20deg);"></i> Anime</button>
-	<button id="anime" onclick="navigate(this.id)" id="inbox" type="button" class="fill black"><i class="fa-sharp fa-solid fa-n" style="transform: rotate(-20deg);"></i> Anime</button>
-	<button id="anime" onclick="navigate(this.id)" id="inbox" type="button" class="fill black"><i class="fa-sharp fa-solid fa-n" style="transform: rotate(-20deg);"></i> Anime</button>
+	<button id="anilist" onclick="navigate(this.id)" id="inbox" type="button" class="fill black"><i class="fa-sharp fa-solid fa-n" style="transform: rotate(-20deg);"></i> Anime</button>
+	<button id="netflix" onclick="navigate(this.id)" id="inbox" type="button" class="fill black"><i class="fa-sharp fa-solid fa-n" style="transform: rotate(-20deg);"></i> Anime</button>
+	<button id="letterboxd" onclick="navigate(this.id)" id="inbox" type="button" class="fill black"><i class="fa-sharp fa-solid fa-n" style="transform: rotate(-20deg);"></i> Anime</button>
+	<button id="myanimelist" onclick="navigate(this.id)" id="inbox" type="button" class="fill black"><i class="fa-sharp fa-solid fa-n" style="transform: rotate(-20deg);"></i> Anime</button>
+	<button id="crunchyroll" onclick="navigate(this.id)" id="inbox" type="button" class="fill black"><i class="fa-sharp fa-solid fa-n" style="transform: rotate(-20deg);"></i> Anime</button>
 
 	<script>
 
@@ -83,13 +83,19 @@
 
 		function navigate(id) {
 
-			if (id == 'anime')
-				window.open("https://www.crunchyroll.com", '_blank').focus();
-			 else if(id === "notion"){
-        window.open("https://www.notion.so/Anime-Home-1-1a7cd7b14230808da280ce0b6cfb2cf7?pvs=4#1b5cd7b142308006b954dbc4bf727c22", '_blank').focus();
+			if (id == 'anilist')
+				window.open("https://anilist.co", '_blank').focus();
+			 else if(id === "netflix"){
+        window.open("https://www.netflix.com/it-en/", '_blank').focus();
+      }
+			 else if(id === "letterboxd"){
+        window.open("https://letterboxd.com/", '_blank').focus();
+      }
+			else if(id === "myanimelist"){
+        window.open("https://myanimelist.net/", '_blank').focus();
       }
       else{
-        window.open("https://www.etsy.com/ca/shop/ShorouksStore", '_blank').focus();
+        window.open("https://www.crunchyroll.com", '_blank').focus();
 
 		}
 	</script>
