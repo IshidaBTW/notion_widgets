@@ -58,11 +58,11 @@
 <body>
 
 	<nav class="navMenu  border">
-		<a id="anilist" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Anilist</a>
-		<a id="netflix" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Netflix</a>
-		<a id="letterboxd" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Letterboxd</a>
-		<a id="myanimelist" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> MyAnimeList</a>
-		<a id="crunchyroll" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Crunchyroll</a>
+		<a id="anilist" onclick="navigate(this.id)" href="#"> </i> Anilist</a>
+		<a id="netflix" onclick="navigate(this.id)" href="#"> </i> Netflix</a>
+		<a id="letterboxd" onclick="navigate(this.id)" href="#"> </i> Letterboxd</a>
+		<a id="myanimelist" onclick="navigate(this.id)" href="#"> </i> MyAnimeList</a>
+		<a id="crunchyroll" onclick="navigate(this.id)" href="#"> </i> Crunchyroll</a>
 
 
 
@@ -78,7 +78,7 @@
 
 		function navigate(id) {
 
-			if (id == 'anilist')
+			if (id == "anilist")
 				window.open("https://anilist.co", '_blank').focus();
 			 else if(id === "netflix"){
         window.open("https://www.netflix.com/it-en/", '_parent').focus();
