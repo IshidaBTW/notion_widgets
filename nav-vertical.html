@@ -67,12 +67,7 @@
 
 
 	</nav>
-	<button id="anilist" onclick="navigate(this.id)" id="inbox" type="button" class="fill black"><i class="fa-sharp fa-solid fa-n" style="transform: rotate(-20deg);"></i> Anime</button>
-	<button id="netflix" onclick="navigate(this.id)" id="inbox" type="button" class="fill black"><i class="fa-sharp fa-solid fa-n" style="transform: rotate(-20deg);"></i> Anime</button>
-	<button id="letterboxd" onclick="navigate(this.id)" id="inbox" type="button" class="fill black"><i class="fa-sharp fa-solid fa-n" style="transform: rotate(-20deg);"></i> Anime</button>
-	<button id="myanimelist" onclick="navigate(this.id)" id="inbox" type="button" class="fill black"><i class="fa-sharp fa-solid fa-n" style="transform: rotate(-20deg);"></i> Anime</button>
-	<button id="crunchyroll" onclick="navigate(this.id)" id="inbox" type="button" class="fill black"><i class="fa-sharp fa-solid fa-n" style="transform: rotate(-20deg);"></i> Anime</button>
-
+	
 	<script>
 
 		let direction = "horizontal";
@@ -86,13 +81,13 @@
 			if (id == 'anilist')
 				window.open("https://anilist.co", '_blank').focus();
 			 else if(id === "netflix"){
-        window.open("https://www.netflix.com/it-en/", '_blank').focus();
+        window.open("https://www.netflix.com/it-en/", '_parent').focus();
       }
 			 else if(id === "letterboxd"){
-        window.open("https://letterboxd.com/", '_blank').focus();
+        window.open("https://letterboxd.com/", '_parent').focus();
       }
 			else if(id === "myanimelist"){
-        window.open("https://myanimelist.net/", '_blank').focus();
+        window.open("https://myanimelist.net/", '_parent').focus();
       }
       else{
         window.open("https://www.crunchyroll.com", '_blank').focus();
